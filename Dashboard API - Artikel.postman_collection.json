@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "aaff4f72-5345-489f-b060-3067af32afb5",
+		"name": "Dashboard API - Artikel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "35163771"
+	},
+	"item": [
+		{
+			"name": "Membuat Artikel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Pengenalan AI \",\r\n  \"content\": \"Artificial Intelligence (AI) dan Machine Learning (ML) telah menjadi bagian penting dalam teknologi modern. AI digunakan dalam berbagai bidang seperti kesehatan, keuangan, hingga industri otomotif. Dengan pemanfaatan data yang besar, algoritma machine learning mampu meningkatkan efisiensi serta memberikan prediksi yang lebih akurat dalam pengambilan keputusan.\",\r\n  \"category\": \"AI & Data Science\",\r\n  \"status\": \"publish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/article/"
+			},
+			"response": []
+		},
+		{
+			"name": "Menampilkan Seluruh Artikel",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/article/"
+			},
+			"response": []
+		},
+		{
+			"name": "Menampilkan Artikel yang di pilih",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/article/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Mengubah Isi Artikel yang di pilih",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Pengenalan AI \",\r\n  \"content\": \"Artificial Intelligence (AI) dan Machine Learning (ML) telah menjadi bagian penting dalam teknologi modern. AI digunakan dalam berbagai bidang seperti kesehatan, keuangan, hingga industri otomotif. Dengan pemanfaatan data yang besar, algoritma machine learning mampu meningkatkan efisiensi serta memberikan prediksi yang lebih akurat dalam pengambilan keputusan.\",\r\n  \"category\": \"AI & Data Science\",\r\n  \"status\": \"publish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/article/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Menghapus Artikel yang di pilih",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/article/1"
+			},
+			"response": []
+		}
+	]
+}
