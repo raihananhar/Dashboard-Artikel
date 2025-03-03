@@ -1,1 +1,1 @@
-akan ada penambahan service login dan register untuk minggu ini
+akan ada penambahan service microservice login dan register untuk minggu ini
